@@ -15,10 +15,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home');
+});
+Route::get('/table', function () {
+    return view('table');
+});
+Route::get('/data-table', function () {
+    return view('data-table');
+});
 
-Route::get('/', [HomeController::class,'index']);
+
+
+// Route::get('/', [HomeController::class,'index']);
 Route::get('/register', [AuthController::class,'form']);
 Route::get('/welcome', [AuthController::class,'welcome']);
