@@ -36,15 +36,15 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="/" class="nav-link ">
+            <a href="/" class="nav-link {{ $title == 'Home' ? 'active' : '' }}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item {{ ($title == 'Table') ? 'menu-is-opening menu-open' : (($title == 'Data Table') ? 'menu-is-opening menu-open' : '')}}">
+            <a href="#" class="nav-link {{ ($title == 'Table') ? 'active' : (($title == 'Data Table') ? 'active' : '')}}">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Tables
@@ -53,13 +53,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/table" class="nav-link">
+                <a href="/table" class="nav-link {{ $title == 'Table' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Table</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/data-table" class="nav-link">
+                <a href="/data-table" class="nav-link {{ $title == 'Data Table' ? ' active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Tables</p>
                 </a>

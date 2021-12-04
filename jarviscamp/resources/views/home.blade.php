@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@php
+    $title = 'Home';
+@endphp
 @section('content')
     <h1>JarvisCamp</h1>
     <h2>Social MediaDeveloper Santai Berkualitas</h2>
