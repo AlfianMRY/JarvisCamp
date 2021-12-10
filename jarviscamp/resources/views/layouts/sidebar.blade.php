@@ -66,6 +66,15 @@
               </li>
             </ul>
           </li>
+
+          <li class="nav-item">
+            <a href="/cast" class="nav-link {{ $title == 'Cast' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-user-friends"></i>
+              <p>
+                Cast
+              </p>
+            </a>
+          </li>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
